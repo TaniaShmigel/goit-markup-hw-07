@@ -8,7 +8,8 @@
   }
   
   .team {
-    background-color: var(--lightgrey-bg-color);
+    @include section (94px, 94px, var(--lightgrey-bg-color));
+    // background-color: var(--lightgrey-bg-color);
   }
   
   .cards__item {

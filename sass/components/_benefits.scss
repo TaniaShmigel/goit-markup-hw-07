@@ -27,9 +27,10 @@
     width: 270px;
   }
   .benefits__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex (flex, center, center);
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     height: 120px;
     margin-bottom: 30px;
   

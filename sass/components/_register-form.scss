@@ -123,12 +123,17 @@
   .register-form__link {
     color: var(--accent-text-color);
     text-decoration: none;
+
+    &:focus,
+    &:hover {
+      border-bottom: 1px solid var(--accent-text-color);
+    }
   }
   
-  .register-form__link:focus,
-  .register-form__link:hover {
-    border-bottom: 1px solid var(--accent-text-color);
-  }
+  // .register-form__link:focus,
+  // .register-form__link:hover {
+  //   border-bottom: 1px solid var(--accent-text-color);
+  // }
   
   .register-form__btn {
     display: block;
