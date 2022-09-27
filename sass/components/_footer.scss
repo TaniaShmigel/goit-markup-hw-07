@@ -19,6 +19,7 @@
     margin-bottom: 20px;
     padding-top: 0;
     padding-bottom: 0;
+    margin-right: 0;
   }
   
   .footer-contacts__item {
@@ -41,10 +42,7 @@
     &:focus { color: var(--accent-text-color);}
   }
   
-  // .footer-contacts__link:hover,
-  // .footer-contacts__link:focus {
-  //   color: var(--accent-text-color);
-  // }
+
   .footer .container {
     display: flex;
     align-items: baseline;

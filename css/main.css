@@ -113,16 +113,13 @@ body {
           align-items: center;
   padding-top: 24px;
   padding-bottom: 25px;
+  margin-right: 93px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1923076923;
   color: var(--accent-text-color);
   text-decoration: none;
-}
-
-.logo__heder {
-  margin-right: 93px;
 }
 
 .logo__dark {
@@ -143,10 +140,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.logo__header {
-  margin-right: 93px;
 }
 
 .header {
@@ -516,6 +509,7 @@ body {
   margin-bottom: 20px;
   padding-top: 0;
   padding-bottom: 0;
+  margin-right: 0;
 }
 
 .footer-contacts__item {
@@ -571,10 +565,6 @@ body {
 
 .social-footer__icon {
   fill: var(--primery-white-color);
-}
-
-.footer-form {
-  margin: 0 auto;
 }
 
 .footer-form__title {
@@ -850,6 +840,9 @@ body {
   display: block;
   margin-bottom: 10px;
 }
+.register-form__field:last-child {
+  margin-bottom: 0;
+}
 
 .register-form__label {
   display: block;
@@ -868,15 +861,17 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
-  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.register-form__input:focus {
+.register-form__input:focus,
+.register-form__input:hover {
   border-color: var(--accent-text-color);
 }
 
-.register-form__input:focus + .register-form__icon {
+.register-form__input:focus + .register-form__icon,
+.register-form__input:hover + .register-form__icon {
   fill: var(--accent-text-color);
 }
 
@@ -884,6 +879,8 @@ body {
   position: absolute;
   left: 12px;
   bottom: 11px;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .register-form__message {
@@ -924,7 +921,8 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.register-form__message:focus {
+.register-form__message:focus,
+.register-form__message:hover {
   border-color: var(--accent-text-color);
 }
 
